@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from ultralytics import YOLO
 
+# Khoi tao FlaskPI server
 app = Flask(__name__ ,static_url_path='/static')
 model = YOLO('best.pt')
 
